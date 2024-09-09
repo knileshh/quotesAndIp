@@ -1,14 +1,20 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import UserIPAddress from './UserIpAddress'
 import './App.css'
+import NasaPictureOfTheDay from './NasaPictureOfTheDay'
+import QuoteCard from './QuoteCard'
+import CatFactCard from './CatFactCard'
+import FooterCard from './FooterCard'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <h1>Hello Greet</h1>
+      <UserIPAddress />
+      <NasaPictureOfTheDay/>
+      {/* <QuoteCard/> */}
+      <CatFactCard/>
+      <FooterCard/>
     </>
   )
 }

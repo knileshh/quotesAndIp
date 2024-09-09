@@ -6,8 +6,6 @@ const app = express();
 
 const genAI = new GoogleGenerativeAI(process.env.GOOGLE_API_KEY);
 
-let result;
-
 const getQuote = async (req, res) => {
     try{
 
@@ -26,7 +24,6 @@ const getQuote = async (req, res) => {
     }
 }
 
-// console.log(get.response.text());
 
 app.get('/', (req, res) => {
     res.send("Hello World! from Quote & IP");
